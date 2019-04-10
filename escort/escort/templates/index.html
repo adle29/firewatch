@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock%}
+
+{% block content %}
+<div class="container" style="margin-top:30px;" ng-controller="watchController as vm" ng-init="vm.initModule()">
+    <div>
+        <button class="btn btn-primary">Add Firefighter + </button>
+    </div>
+    
+
+    <div class="card border-primary mb-3" style="max-width: 20rem; margin-top:30px;" ng-repeat="fighter in vm.firefighters">
+        <div class="card-header">[[ fighter.full_name ]]</div>
+        <div class="card-body text-primary">
+            <h4 class="card-title">Active: [[fighter.active ? 'YES' : 'NO']]</h4>
+            <h4 class="card-title">GAS Monitor: </h4>
+            <h4 class="card-title">TEMP MONITOR: </h4>
+            <p>Specialty: [[fighter.specialty]]</p>
+        </div>
+    </div>
+
+</div>
+{% endblock%}
+
+{% block bottomScripts %}
+<script src="/static/js/controllers.js"></script>
+{% endblock %}

@@ -1,0 +1,102 @@
+Arduino: 1.8.5 (Mac OS X), Board: "Arduino/Genuino Uno"
+
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino: In function 'char* getTemperatureReading()':
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:172:8: warning: address of local variable 'buffer' returned [-Wreturn-local-addr]
+   char buffer[20];
+        ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino: In function 'char* getGasReading()':
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:182:10: warning: invalid conversion from 'char' to 'char*' [-fpermissive]
+  return *s;
+          ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: At global scope:
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:35:21: error: redefinition of 'char replybuffer [255]'
+ char replybuffer[255];
+                     ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:8:6: note: 'char replybuffer [255]' previously declared here
+ char replybuffer[255];
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:41:16: error: redefinition of 'SoftwareSerial fonaSS'
+ SoftwareSerial fonaSS = SoftwareSerial(FONA_TX, FONA_RX);
+                ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:14:16: note: 'SoftwareSerial fonaSS' previously declared here
+ SoftwareSerial fonaSS = SoftwareSerial(FONA_TX, FONA_RX);
+                ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:42:17: error: redefinition of 'SoftwareSerial* fonaSerial'
+ SoftwareSerial *fonaSerial = &fonaSS;
+                 ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:15:17: note: 'SoftwareSerial* fonaSerial' previously defined here
+ SoftwareSerial *fonaSerial = &fonaSS;
+                 ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:48:15: error: redefinition of 'Adafruit_FONA fona'
+ Adafruit_FONA fona = Adafruit_FONA(FONA_RST);
+               ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:21:15: note: 'Adafruit_FONA fona' previously declared here
+ Adafruit_FONA fona = Adafruit_FONA(FONA_RST);
+               ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:52:67: warning: default argument given for parameter 3 of 'uint8_t readline(char*, uint8_t, uint16_t)' [-fpermissive]
+ uint8_t readline(char *buff, uint8_t maxbuff, uint16_t timeout = 0);
+                                                                   ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:922:9: note: previous specification in 'uint8_t readline(char*, uint8_t, uint16_t)' here
+ uint8_t readline(char *buff, uint8_t maxbuff, uint16_t timeout) {
+         ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:54:9: error: redefinition of 'uint8_t type'
+ uint8_t type;
+         ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:27:9: note: 'uint8_t type' previously declared here
+ uint8_t type;
+         ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'void setup()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:56:6: error: redefinition of 'void setup()'
+ void setup() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:32:6: note: 'void setup()' previously defined here
+ void setup() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'void printMenu()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:110:6: error: redefinition of 'void printMenu()'
+ void printMenu(void) {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:91:6: note: 'void printMenu()' previously defined here
+ void printMenu(void) {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'void loop()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:175:6: error: redefinition of 'void loop()'
+ void loop() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:157:6: note: 'void loop()' previously defined here
+ void loop() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'void flushSerial()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:824:6: error: redefinition of 'void flushSerial()'
+ void flushSerial() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:897:6: note: 'void flushSerial()' previously defined here
+ void flushSerial() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'char readBlocking()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:829:6: error: redefinition of 'char readBlocking()'
+ char readBlocking() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:902:6: note: 'char readBlocking()' previously defined here
+ char readBlocking() {
+      ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'uint16_t readnumber()':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:833:10: error: redefinition of 'uint16_t readnumber()'
+ uint16_t readnumber() {
+          ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:906:10: note: 'uint16_t readnumber()' previously defined here
+ uint16_t readnumber() {
+          ^
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino: In function 'uint8_t readline(char*, uint8_t, uint16_t)':
+/Users/parlevel/Documents/Arduino/firewatch/fona_code.ino:849:9: error: redefinition of 'uint8_t readline(char*, uint8_t, uint16_t)'
+ uint8_t readline(char *buff, uint8_t maxbuff, uint16_t timeout) {
+         ^
+/Users/parlevel/Documents/Arduino/firewatch/firewatch.ino:922:9: note: 'uint8_t readline(char*, uint8_t, uint16_t)' previously defined here
+ uint8_t readline(char *buff, uint8_t maxbuff, uint16_t timeout) {
+         ^
+exit status 1
+Error compiling for board Arduino/Genuino Uno.
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
